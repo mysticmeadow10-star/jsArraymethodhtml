@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>
+            Array Method Example in Javascript.
+        </title>
+    </head>
+
+    <body>
+        <h1>Array Example</h1>
+        <p id="output"></p>
+
+        <script>
+
+            let fruits = ["Litchi", "Apple", "Mango", "Banana"];
+            let joinedFruits = fruits.join(" - ");
+            let removedFruits = fruits.pop(); 
+            fruits.push("Grapes");
+
+            document.getElementById("output").innerHTML = 
+
+            "<b>Using join():</b><br>" +
+            joinedFruits + "<br><br>" +
+
+            "<b>Using pop():</b><br>" +
+            "Removed Element: " + fruits + "<br><br>" +
+
+            "<b>Using push():</b><br>" +
+            "Array after push('Apple'): " + fruits;
+
+            </script>
+
+    </body>
+</html>
